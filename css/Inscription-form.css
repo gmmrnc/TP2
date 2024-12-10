@@ -1,0 +1,81 @@
+/* //////////////////////////////////  Inscription-form  //////////////////////////////////////////////////////////////// */
+
+.formulaire {
+    background-color: rgb(241, 214, 232);  
+    padding: 20px;
+    border-radius: 10px;  
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.formulaire fieldset {
+    border: 2px solid #e0a1c7;  
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.formulaire legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #e51b61;  
+}
+
+.formulaire label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #4a2d3a; 
+    text-align: center;
+}
+
+.formulaire input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 2px solid #e51b61; 
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.formulaire input:focus {
+    border-color: #a14d76; 
+    outline: none; 
+}
+
+.formulaire div {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+}
+
+.formulaire button {
+    background-color: #e51b61;  
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+    transition: background-color 0.3s ease;
+}
+
+.formulaire button[type="reset"] {
+    background-color: #ccc;
+    color: #333;
+}
+
+.formulaire button:hover {
+    background-color: #a14d76;  
+}
+
+.formulaire .error {
+    color: #e51b61;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}

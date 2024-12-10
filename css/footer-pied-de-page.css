@@ -1,0 +1,116 @@
+
+  /* ////////////////////////////////// pied de page //////////////////////////////////////////////////////////////// */
+
+footer#pied {
+    background-color: #d5a4da;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  footer#pied .pied {
+    display: block;
+    padding: 0 20px;
+  }
+  
+  footer#pied h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff; 
+    padding-bottom: 5px;
+  }
+  
+  footer#pied ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer#pied li {
+    margin: 8px 0;
+    font-size: 1rem;
+  }
+  
+  footer#pied a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer#pied a:hover {
+    color: #988ddf; 
+  }
+  
+  footer#pied p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  footer#pied .pied > div {
+    margin-bottom: 20px;
+    text-align: left; 
+  }
+  
+  footer#pied .liens ul li {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    footer#pied .pied {
+      padding: 0;
+    }
+  
+    footer#pied .pied > div {
+      width: 100%; 
+      text-align: center;
+    }
+  }
+  
+footer#pied .reseaux-sociaux {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  footer#pied .reseaux-sociaux h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff; 
+    padding-bottom: 5px;
+  }
+  
+  footer#pied .reseaux-sociaux figure {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+
+  footer#pied .reseaux-sociaux img {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  footer#pied .reseaux-sociaux img:hover {
+    transform: scale(1.2);
+  }
+  
+  footer#pied ol {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  footer#pied ol a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  footer#pied ol a:hover {
+    color: #fff;
+  }
+
+  .description {
+    text-align: justify;
+  }

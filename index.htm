@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/Inscription-form.css">
+   <link rel="stylesheet" href="css/article.css">
+   <link rel="stylesheet" href="css/video.css">
+   <link rel="stylesheet" href="css/galerie.css">
+   <link rel="stylesheet" href="css/tableau-horaire.css">
+   <link rel="stylesheet" href="css/footer-pied-de-page.css">
+   <link rel="stylesheet" href="css/entete.css">
+</head>
+<body>
+    <header id="entete" class="entete">
+    <div class="global hero"> 
+         <!-- menu -->
+        <label id="burger" for="chk-burger">  
+            <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu-alt-1&color=888" width="32" height="32">
+            </label>
+            <input type="checkbox" name="chk-burger" id="chk-burger">  
+        <nav id="menu">
+            <a href="#entete">Accueil</a>
+            <a href="#section-1">Inscription</a>
+            <a href="#section-2">Tableau</a>
+            <a href="#section-3">Articles</a>
+            <a href="#section-4">Galerie</a>
+            <a href="#section-5">Vidéo</a>
+            <a href="#pied">Pied de page</a>
+        </nav>
+        <!-- entete -->
+<section class="hero__ecriture-logo">
+    <div class="hero__texte">
+        <h1>Les plus belles plages du monde</h1>
+        <div class="hero__details">
+            <p class="entete__info">TP2</p>
+            <p id="Auteur">Auteure: Gracia Marenco</p>
+            <p class="entete__info">582-1W1-Mise en page Web</p>
+            <p class="entete__info2">Techniques d'intégration multimedia</p>
+            <p class="entete__info">Collège de Maisonneuve</p>
+            <p class="stylesheet-link">
+             <a href="https://github.com/gmmrnc/TP2.git" target="_blank">GitHub TP2</a>
+            </p>
+            <p class="entete__info">Automne 2024</p>
+        </div>         
+    </div>
+
+            <figure class="hero__figure">
+            <img src="images/marenco_gracia_logo_sans_fond.png" alt="logo">
+        </figure>
+        </section>
+<div id="info-pdp"></div>
+</div>
+</header>
+ <!--Inscription-->
+ <section id="section-1">
+    <div class="global">
+        <form class="formulaire">
+            <fieldset>
+                <legend>Inscrivez-vous!</legend>
+                <div>
+                    <label for="nom">Nom</label>
+                    <input id="nom" type="text" placeholder="Entrez votre nom">
+                </div>
+                <div>
+                    <label for="prenom">Prénom</label>
+                    <input id="prenom" type="text" placeholder="Entrez votre prénom">
+                </div>
+                <div>
+                    <label for="courriel">Courriel</label>
+                    <input id="courriel" type="email" placeholder="Entrez votre courriel">
+                </div>
+                <div>
+                    <label for="mot_de_passe">Mot de passe</label>
+                    <input id="mot_de_passe" type="password" placeholder="Entrez votre mot de passe">
+                </div>
+                <div>
+                    <label>Info supplémentaire</label>
+                    <input type="radio" id="oui" name="Info supplémentaire" value="oui" required>
+                    <label for="oui">Oui</label>
+                    <input type="radio" id="non" name="Info supplémentaire" value="non" required>
+                    <label for="non">Non</label>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Adresse complète</legend>
+                <div>
+                    <label for="pays">Pays</label>
+                    <input id="pays" type="text" placeholder="Entrez le pays">
+                </div>
+                <div>
+                    <label for="province">Province</label>
+                    <input id="province" type="text" placeholder="Entrez la province">
+                </div>
+                <div>
+                    <label for="rue">Rue</label>
+                    <input id="rue" type="text" placeholder="Entrez votre adresse civique">
+                </div>
+            </fieldset>
+            <div>
+                <label>
+                    <input type="checkbox" required> J'accepte les termes et conditions
+                </label>
+            </div>
+            <div>
+                <button type="submit">Envoyer</button>
+                <button type="reset">Réinitialiser</button>
+            </div>
+        </form>
+    </div>
+</section>
+     <!--Tableau-->
+    <section id="section-2">
+        <div class="global">
+            <table>
+                <caption>Horaire automne 2024</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                    </tr>
+                </thead>
+                <!-- 8h  -->   
+                <tr>
+                   <th>8h</th>
+                   <td class="m-1w1" rowspan="2"><h2 class="diagonal">1W1</h2></td>
+                   <td></td>
+                   <td rowspan="1"></td>
+                   <td rowspan="2"></td>
+                   <td class="m-1m1" rowspan="3"><h2 class="diagonal">1M1</h2></td>
+                </tr> 
+                <!-- 9h  -->   
+                <tr>
+                    <th>9h</th>
+                    <td class="m-1w1" rowspan="3"><h2 class="diagonal">1W1</h2></td>
+                    <td class="eng" rowspan="3"><h2 class="diagonal">ANGLAIS</h2></td>
+                </tr>
+                 <!-- 10h  -->  
+                <tr>
+                    <th>10h</th>
+                    <td class="m-1m1" rowspan="2"><h2 class="diagonal">1M1</h2></td>
+                    <td class="muscu" rowspan="3"><h2 class="diagonal">MUSCU</h2></td>
+                </tr>
+                 <!-- 11h  -->  
+                <tr>
+                    <th>11h</th>
+                    <td class="libre" rowspan="3"><h2 class="vertical">LIBRE</h2></td>
+                </tr>
+                 <!-- 12h  -->  
+                <tr>
+                    <th>12h</th>
+                    <td class="libre" rowspan="6"><h2 class="vertical">LIBRE</h2></td>
+                    <td class="libre" rowspan="6"><h2 class="vertical">LIBRE</h2></td>
+                    <td class="libre" rowspan="6"><h2 class="vertical">LIBRE</h2></td>
+                </tr>
+                 <!-- 13h  -->  
+                <tr>
+                    <th>13h</th>
+                    <td class="libre" rowspan="2"><h2>LIBRE</h2></td>
+                </tr>
+                 <!-- 14h  -->  
+                <tr>
+                    <th>14h</th>
+                    <td class="m-1m2" rowspan="4"><h2 class="diagonal">1M2</h2></td>
+                </tr>
+                 <!-- 15h  -->  
+                <tr>
+                    <th>15h</th>
+                    <td class="m-1m2" rowspan="3"><h2 class="diagonal">1M2</h2></td>
+                </tr>
+                 <!-- 16h  -->  
+                <tr>
+                    <th>16h</th>
+                    </td>
+                </tr>
+                 <!-- 17h  -->  
+                <tr>
+                    <th>17h</th>
+                </tr>
+            </table>
+        </section>
+        </div>
+        <section id="section-3">
+            <div class="global">
+                <h1>Informations sur les plages</h1>
+                <h2>La plage parfaite pour des vacances de rêve</h2>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img class="taille" src="images/Whitehaven-Australie.jpg" alt="Whitehaven, Australie">
+                        <figcaption>Whitehaven, Australie</figcaption>
+                    </figure>
+                    <div class="article__p">
+                    <p>Whitehaven Beach, située sur l'île Whitsunday en Australie, est célèbre pour ses plages de sable blanc éclatant et ses eaux cristallines. S'étendant sur 7 kilomètres, ce site est considéré comme l'une des plus belles plages du monde. Son sable, composé à 98 % de silice pure, donne une couleur blanche immaculée qui contraste magnifiquement avec l'eau turquoise. Accessible uniquement par bateau ou hydravion, Whitehaven est un véritable paradis naturel, parfait pour la baignade, le snorkeling et la détente en pleine nature.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img class="taille" src="images/tulum,mexico.jpg" alt="Tulum, Mexique">
+                        <figcaption>Tulum, Mexique</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p>Tulum, situé sur la côte caraïbe du Mexique, est une destination prisée pour ses plages de sable fin et ses eaux cristallines. Ancienne cité maya, Tulum abrite des ruines impressionnantes perchées au sommet de falaises, offrant une vue spectaculaire sur la mer. L'atmosphère de Tulum est à la fois décontractée et chic, avec de nombreux hôtels-boutiques, restaurants raffinés et plages isolées. C'est un lieu idéal pour les amoureux de la nature, de l'histoire et du bien-être, attirant des visiteurs du monde entier.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img class="taille" src="images/el tunco.jpg" alt="Plage El Tunco, El Salvador">
+                        <figcaption>El Tunco, El Salvador</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p>El Tunco, situé sur la côte pacifique du Salvador, est un petit village côtier réputé pour ses plages idéales pour le surf. Avec ses vagues puissantes et son atmosphère décontractée, il attire les surfeurs du monde entier. En plus de ses spots de surf, El Tunco offre un cadre naturel magnifique, avec des couchers de soleil spectaculaires et des formations rocheuses uniques. Le village est également connu pour ses restaurants de fruits de mer frais et son ambiance conviviale, faisant de ce lieu un havre de paix pour les voyageurs en quête de détente et d'aventure.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img class="taille" src="images/Bahia de Las Aguilas à Barahona.jpg" alt="Bahia de Las Aguilas, Barahona, République Dominicaine">
+                        <figcaption>Bahia de Las Aguilas, Barahona, République Dominicaine</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p>Bahia de Las Aguilas, située dans la région de Barahona en République Dominicaine, est l'une des plages les plus préservées et spectaculaires du pays. Ce site isolé, accessible principalement par bateau, se distingue par ses eaux cristallines, son sable blanc immaculé et ses paysages vierges. Entourée de montagnes et de végétation luxuriante, la baie offre un cadre idyllique pour la baignade, la plongée et l'observation de la faune. C'est un véritable paradis caché, loin des foules, où la nature reste intacte et où les visiteurs peuvent profiter de la tranquillité absolue.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img class="taille" src="images/Nosy Iranja-Madagascar.jpg" alt="Nosy Iranja, Madagascar">
+                        <figcaption>Nosy Iranja, Madagascar</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p>Nosy Iranja, située au large de la côte nord-ouest de Madagascar, est un véritable paradis tropical. Composée de deux îles reliées par un banc de sable, elle séduit par ses plages de sable blanc, ses eaux turquoise et sa faune marine exceptionnelle. Idéale pour la baignade, le snorkeling et la plongée, Nosy Iranja est également un sanctuaire pour les tortues marines qui viennent y pondre. Avec son atmosphère tranquille et ses paysages à couper le souffle, c'est un lieu idéal pour les amoureux de la nature à la recherche de sérénité et de beauté.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img class="taille" src="images/Pink Sands aux Bahamas.jpg" alt="Plage de sable rose, Bahamas">
+                        <figcaption>Plage de sable rose, Bahamas</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p>La Plage de Sable Rose, située sur l'île Harbour en Bahamas, est célèbre pour son sable d'une teinte délicatement rose, créé par les coquillages broyés par les vagues. Cette plage idyllique, bordée par des eaux cristallines aux nuances turquoises, est un véritable havre de paix. Ses paysages spectaculaires et son atmosphère tranquille en font un lieu prisé des visiteurs en quête de détente et de beauté naturelle. Accessible par bateau ou avion, la Plage de Sable Rose est un incontournable pour les amoureux de la nature et des plages paradisiaques.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img class="taille" src="images/PLAGE DE MYRTOS (CÉFALONIE, GRÈCE).jpg" alt="Plage de Myrtos, Grèce">
+                        <figcaption>Plage de Myrtos, Grèce</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p>La Plage de Myrtos, située sur l'île de Céphalonie en Grèce, est l'une des plages les plus célèbres et spectaculaires du pays. Entourée de falaises blanches imposantes et bordée par des eaux turquoise cristallines, elle offre un paysage à couper le souffle. Son sable fin et ses eaux peu profondes en font un lieu idéal pour la baignade et la détente. Accessible par une route sinueuse, la Plage de Myrtos est un véritable joyau naturel, attirant chaque année de nombreux visiteurs désireux de découvrir sa beauté sauvage et préservée.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img class="taille" src="images/La Digue, Seychelles.jpg" alt="La Digue, Seychelles">
+                        <figcaption>La Digue, Seychelles</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p>La Digue, l'une des îles des Seychelles, est réputée pour ses plages paradisiaques et ses eaux cristallines. Avec ses formations rocheuses impressionnantes et sa végétation luxuriante, elle offre un cadre idyllique pour la baignade, le snorkeling et la randonnée. L'île, tranquille et préservée, est un véritable havre de paix.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img class="taille" src="images/Bora Bora (Tahiti, République française).jpg" alt="Bora Bora, Tahiti">
+                        <figcaption>Bora Bora, Tahiti</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p>Bora Bora, située en Polynésie française, est célèbre pour ses eaux turquoise, ses plages de sable blanc et ses montagnes volcaniques. Ce paradis tropical est un lieu de rêve pour la plongée, le snorkeling et la détente, avec des bungalows sur pilotis offrant une vue imprenable sur le lagon. Bora Bora incarne l'élégance et la beauté naturelle des îles du Pacifique.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img class="taille" src="images/KA'ANAPALI BEACH (LAHAINA, MAUI, HAWÁI).jpg" alt="Ka'anapali, Hawai">
+                        <figcaption>Ka'anapali, Hawai</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p>Ka'anapali, située sur la côte ouest de Maui à Hawaï, est une célèbre station balnéaire offrant des plages de sable doré et des eaux cristallines. Idéale pour le snorkeling, le surf et la détente, elle est entourée de complexes hôteliers de luxe et de paysages volcaniques spectaculaires. Ka'anapali est un véritable paradis pour les amateurs de nature et de loisirs en bord de mer.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+     <!--Galerie-->
+    <section id="section-4">
+        <div class="global">
+                <figure class="galerie__figure">
+                    <img class="size" src="images/Whitehaven-Australie.jpg" alt="Whitehaven, Australie">
+                    <figcaption>Whitehaven, Australie</figcaption>
+                </figure>
+                <figure class="galerie__figure">
+                    <img class="size" src="images/Tulum.jpg" alt="Tulum, Mexico">
+                    <figcaption>Tulum, Mexico</figcaption>
+                </figure>
+                <figure class="galerie__figure">
+                    <img class="size" src="images/el tunco.jpg" alt="El Tunco, El Salvador">
+                    <figcaption>El Tunco, El Salvador</figcaption>
+                </figure>
+                <figure class="galerie__figure">
+                    <img class="size" src="images/Bahia de Las Aguilas à Barahona.jpg" alt="Bahia de Las Aguilas, Barahona, République Dominicaine">
+                    <figcaption>Bahia de Las Aguilas, République Dominicaine</figcaption>
+                </figure>
+                <figure class="galerie__figure">
+                    <img class="size" src="images/Nosy Iranja-Madagascar.jpg" alt="Nosy Iranja, Madagascar">
+                    <figcaption>Nosy Iranja, Madagascar</figcaption>
+                </figure>
+                <figure class="galerie__figure">
+                    <img class="size" src="images/Pink Sands aux Bahamas.jpg" alt="Plage de sable rose, Bahamas">
+                    <figcaption>Plage de sable rose, Bahamas</figcaption>
+                </figure>
+                <figure class="galerie__figure">
+                    <img class="size" src="images/PLAGE DE MYRTOS (CÉFALONIE, GRÈCE).jpg" alt="Plage de Myrtos, Grèce">
+                    <figcaption>Plage de Myrtos, Grèce</figcaption>
+                </figure>
+                <figure class="galerie__figure">
+                    <img class="size" src="images/La Digue, Seychelles.jpg" alt="La Digue, Seychelles">
+                    <figcaption>La Digue, Seychelles</figcaption>
+                </figure>
+                <figure class="galerie__figure">
+                    <img class="size" src="images/Bora Bora (Tahiti, République française).jpg" alt="Bora Bora, Tahiti">
+                    <figcaption>Bora Bora, Tahiti</figcaption>
+                </figure>
+                <figure class="galerie__figure">
+                    <img class="size" src="images/KA'ANAPALI BEACH (LAHAINA, MAUI, HAWÁI).jpg" alt="Ka'anapali, Hawai">
+                    <figcaption>Ka'anapali, Hawai</figcaption>
+                </figure>
+        </div>
+    </section>
+     <!--Video-->
+     <section id="section-5">
+        <div class="global">
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/0ANLBX2EgmM?si=zNBOIlsFbkNfNiPk" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/ZuyJiNxzgIg?si=1JMFSDobTS8bhsAp" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/4ECd2nJsDcU?si=BRms-dqiOQINIB_Y" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/MbQq4Aizm3E?si=diPraJSslBD4d3vI" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>        
+    </section>
+      <!--Footer/pied de page-->
+      <footer id="pied" class="pied">
+        <section class="global">
+          <div>
+            <h2>Adresse du Collège</h2>
+            <ul>
+              <li>234 Sherbrooke, Montréal, Québec, Canada</li>
+              <li>info@cmaisonneuve.qc.Canada</li>
+              <li>514-123-4567</li>
+            </ul>
+          </div>
+          <div class="liens">
+            <h2>Liens importants</h2>
+            <ul>
+              <li><a href="https://www.cmaisonneuve.qc.ca/">Site officiel du Collège</a></li>
+              <li><a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/#liste_des_cours_programme">Programme</a></li>
+              <li><a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/bourses-perspective/faire-demande-bourse">Bourse</a></li>
+              <li><a href="https://www.behance.net/graciamarenco">Behance</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Description du département</h2>
+            <p class="description">Cet programme offre une formation complète dans la création et le développement de projets multimédias. Il couvre divers domaines tels que le design graphique, la vidéo, l’audio, l’animation et le développement web. Les participants apprennent à concevoir des sites web, des applications, des vidéos interactives et des animations en utilisant des outils et technologies professionnels.</p>
+          </div>
+      <!-- Icones reseaux sociaux -->
+    <div class="reseaux-sociaux">
+      <h2>Médias sociaux</h2>
+      <figure>
+        <img src="images/facebook_32.png" alt="facebook" />
+        <img src="images/instagram_32.png" alt="instagram" />
+        <img src="images/youtube_32.png" alt="youtube" />
+      </figure>
+    </div>
+    <!-- Privacy Notice -->
+    <div>
+      <ol>Avis de confidentialité | Privacy Notice</ol>
+    </div>
+  </section>
+    </footer>
+</body>
+</html>

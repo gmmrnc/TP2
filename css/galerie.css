@@ -1,0 +1,47 @@
+  /* ////////////////////////////////// Galérie //////////////////////////////////////////////////////////////// */
+
+  #section-4 .global {
+    display: flex;             
+    flex-wrap: wrap;               
+    gap: 20px;                    
+    justify-content: space-around; 
+    padding: 20px;
+}
+  .galerie__figure {
+    transform: scale(.95) translateX(-2%);
+    transition: transform .25s;
+   filter: opacity(.5);
+   filter: brightness(0.4);
+}
+
+.galerie__figure:hover {
+    transform: scale(1) translateX(0);
+    filter: opacity(1);
+}
+
+.size { 
+    width: 300px;
+    height: 200px;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(170, 159, 159, 0.5); 
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+.galerie__figure:hover figcaption {
+  visibility: visible; 
+}
+
+
+
+
+
+

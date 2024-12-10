@@ -1,0 +1,171 @@
+/* ////////////////////////////////// Entete //////////////////////////////////////////////////////////////// */
+
+nav {
+    display: flex;
+     justify-content: center;
+     align-items: center;     
+     text-align: center; 
+     font-size: 12px;
+     gap: 35px;
+     padding-top: 50px;
+     width: 100%;
+     flex-wrap: wrap;
+ }
+ 
+ nav a {
+     color: #fff;
+     text-decoration: none;
+ }
+ 
+ #logo {
+     width: 400px;
+     height: auto;
+     display: flex;
+     flex-direction: row-reverse;
+ }
+ 
+ .ecriture-logo {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     flex-direction: row-reverse;
+     padding-top: 100px;
+ }
+ .texte {
+     display: flex;
+     flex-direction: column;
+     padding: 25px;
+     max-width: 1600px;
+ }
+ 
+ .details {
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     line-height: 25px;
+     font-size: 13px;
+     color: rgb(255, 255, 255);
+ }
+ 
+ h1 {
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 50px;
+     color: rgb(230 70 145);
+ }
+ 
+ #info-pdp {
+     display: flex;          
+     justify-content: center;  
+     align-items: center;     
+     text-align: center;      
+     margin-top: 2rem;         
+     padding: 1rem;           
+     width: 100%; 
+ }
+ 
+ .global {
+     min-height: 100vh;
+     background-color: rgba(243, 221, 221, 0.4);
+     max-width: 900px;
+     margin: 0 auto;
+     padding: 30px;
+ }
+ 
+ #Auteur {
+     padding-top: 20px;
+     padding-bottom: 10px;
+ }
+ 
+ .entete,
+ .pied {
+     background-color: rgb(233, 139, 183);
+ }
+ 
+ h2 {
+     padding: 15px;
+     font-family: monospace;
+     color: #293a9d;
+ }
+ 
+ body > section:nth-of-type(1) {
+     background-color: #8E7AB5;
+ }
+ 
+ body > section:nth-of-type(2) {
+     background-color: #B784B7;
+ }
+ 
+ body > section:nth-of-type(3) {
+     background-color: #E493B3;
+ }
+ 
+ body > section:nth-of-type(4) {
+     background-color: #EEA5A6;
+ }
+ body > section:nth-of-type(5) {
+     background-color: #FDCEDF;
+ }
+ 
+ .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+ }
+ .hero__texte{
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 2 0 300px;
+    text-align: center;
+ }
+ 
+ .hero__figure{
+     flex: 1 0 298px;
+ }
+ 
+ .hero__figure img{
+ width: 130%;
+ height: auto;
+ display: block;
+ }
+ 
+ .hero__h1{
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-size: 48px;
+     font-style: italic;
+     color: rgb(15, 12, 189);
+ }
+ 
+ .hero__ecriture-logo {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+ }
+ 
+ .hero__details{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     line-height: 30px;
+     font-size: 25px;
+     color: #fff;
+ }
+
+ .hero__details .stylesheet-link a {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+.hero__details .stylesheet-link a:hover {
+    text-decoration: underline;
+    background-color: #c434d4;
+    color: rgb(175, 203, 246);
+}
+
+.entete__info {
+    color: #ef5c92;
+}
+
+.entete__info2 {
+    color: #ffffff;
+}
+
